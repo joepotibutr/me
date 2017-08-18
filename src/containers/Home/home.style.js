@@ -19,7 +19,21 @@ export const TextTransitionGroup = styled(ReactCSSTransitionGroup).attrs({
     }
 
 `
-
+export const SocialMedia = styled.div`
+    display:flex;
+    justify-content:center;
+    
+`
+export const Icon = styled.img`
+    margin:0 15px 0 15px;
+    width:25px;
+    height:25px;
+    filter:brightness(300%);
+    transition:transform .3s;
+        &:hover{
+            transform:scale(1.5,1.5);
+        }
+`
 
 
 
