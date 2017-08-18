@@ -3,14 +3,16 @@ import { MyName , Paragraph , Icon , TextTransitionGroup , SocialMedia } from '.
 import { Container , Flex } from '../../theme/grid';
 
 
+
 export default class Home extends Component {
     render() {
         return (
             <Container>
+                
                 <Flex justify={'center'} align={'center'}>
                     <TextTransitionGroup>
                         <MyName>Watcharapong</MyName>
-                        <Paragraph>A CREATIVE FRONT END DEVELOPER</Paragraph>
+                        <Paragraph>A CREATIVE FRONT-END DEVELOPER</Paragraph>
                     </TextTransitionGroup>
                </Flex>
                
