@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { MyName , Paragraph , Icon , TextTransitionGroup , SocialMedia } from './home.style';
+import { MyName , Paragraph , Icon ,  SocialMedia } from './home.style';
 import { Container , Flex } from '../../theme/grid';
 
 
@@ -8,12 +8,17 @@ export default class Home extends Component {
     render() {
         return (
             <Container>
-                
+               
+               
                 <Flex justify={'center'} align={'center'}>
-                    <TextTransitionGroup>
+                  <div>
                         <MyName>Watcharapong</MyName>
-                        <Paragraph>A CREATIVE FRONT-END DEVELOPER</Paragraph>
-                    </TextTransitionGroup>
+                            <Paragraph>
+                            A CREATIVE FRONT-END DEVELOPER
+                            <br/>
+                            WHO LOVES TECHNOLOGY AND DESIGN
+                            </Paragraph>
+                    </div>
                </Flex>
                
                <SocialMedia>

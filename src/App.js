@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Home from './containers/Home/home'
+import Sidenav from './components/sidenav/sidenav'
 import {Background} from './App.style'
 
 
@@ -8,7 +9,8 @@ class App extends Component {
     return (
     <div>
        <Background>
-     <Home/>
+         <Sidenav/>
+         <Home/>
        </Background>
     </div>
     );

@@ -1,14 +1,13 @@
 import styled from 'styled-components';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+//import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 
-
+/*
 export const TextTransitionGroup = styled(ReactCSSTransitionGroup).attrs({
     transitionName:'text',
     transitionAppear:true,
     transitionAppearTimeout:1000,
-    transitionEnterTimeout:false,
-    transitionLeaveTimeout:false
+  
 })`
     .text-appear{
         opacity:0.1;
@@ -18,7 +17,7 @@ export const TextTransitionGroup = styled(ReactCSSTransitionGroup).attrs({
         transition:opacity 1s linear;
     }
 
-`
+`*/
 export const SocialMedia = styled.div`
     display:flex;
     justify-content:center;
@@ -29,10 +28,11 @@ export const Icon = styled.img`
     filter:invert(100%);
     width:20px;
     height:20px;
+    cursor:pointer;
     
-    transition:transform .3s;
+    transition:transform .25s ease-in;
         &:hover{
-            transform:scale(1.25);
+            transform:scale(1.5,1.5);
         }
 `
 
@@ -44,10 +44,13 @@ color:#E5E7E9;
 font-size:1.5em;
 word-spacing:8px;
 letter-spacing:2px;
+font-weight:bold;
+line-height:25px;
 `
 
 export const MyName = styled.h1`
 font-family: 'Lobster', cursive;
+font-weight:100;
 color:#E5E7E9;
 letter-spacing:3px;
 cursor:default;
