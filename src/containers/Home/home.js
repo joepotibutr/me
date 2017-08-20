@@ -8,8 +8,6 @@ export default class Home extends Component {
     render() {
         return (
             <Container>
-               
-               
                 <Flex justify={'center'} align={'center'}>
                   <div>
                         <MyName>Watcharapong</MyName>

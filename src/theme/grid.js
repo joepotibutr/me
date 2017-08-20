@@ -16,11 +16,11 @@ export const Flex = styled.div`
         `}
 `
 export const Container = styled.div`
-padding-left: 120px;
-padding-right: 120px;
-height:100%;
-display:grid;
-grid-template-columns:100%;
-grid-template-rows:90% 10%;
+        padding-left: 120px;
+        padding-right: 120px;
+        height:100%;
+        display:grid;
+        grid-template-columns:100%;
+        grid-template-rows:90% 10%;
 `
 

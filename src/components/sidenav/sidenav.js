@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
-import { SidenavToggle , Sidebar , SidebarItem } from './sidenav.style';
-import { Flex } from '../../theme/grid';
+import { SidenavToggle , Sidebar , SidebarItem , Darker , Underline } from './sidenav.style';
+
 
 
 export default class SideNav extends Component {
     constructor(props){
         super(props);
-        this.state = {
-            active : false
-        }
+        this.state = {  active : false  }
     }
    
 
@@ -16,15 +14,19 @@ export default class SideNav extends Component {
     
         return (
             <div>
-              
-                <SidenavToggle  onClick={() => this.setState({ active:!this.state.active }) }>☰</SidenavToggle>
-                <Flex justify={'center'} align={'center'}>
-                    <Sidebar active={this.state.active}>
-                        <SidebarItem href="www.google.com" >About</SidebarItem>
-                        <SidebarItem href="www.google.com" >Projects</SidebarItem>
-                        <SidebarItem href="www.google.com" >Contact</SidebarItem>
-                    </Sidebar>
-                 </Flex>
+                <Darker  active={this.state.active}/>
+                <SidenavToggle  onClick={() => this.setState({ active:!this.state.active }) }>
+                    
+                    {this.state.active ? 'X':'☰'}
+                  
+                </SidenavToggle>
+               
+                <Sidebar active={this.state.active} justify={'center'} align={'center'}>
+                        <SidebarItem href="www.google.com" >ABOUT<Underline/></SidebarItem>
+                        <SidebarItem href="www.google.com" >PROJECTS<Underline/></SidebarItem>
+                        <SidebarItem href="www.google.com" >CONTACT<Underline/></SidebarItem>
+                </Sidebar>
+               
             </div>
         );
     }
