@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { SidenavToggle , Sidebar , SidebarItem , Darker , Underline } from './sidenav.style';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+//import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 
 export default class SideNav extends Component {

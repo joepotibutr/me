@@ -2,7 +2,7 @@
   "name": "watcharapong",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://vchrpng.github.io/me",
+  "homepage": "https://vchrpng.github.io/watcharapong",
   "dependencies": {
     "react": "^15.6.1",
     "react-addons-css-transition-group": "^15.6.0",
