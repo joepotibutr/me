@@ -16,7 +16,7 @@ export const SidenavToggle = styled.span`
 
 export const SidenavBar = styled.div`
         height: 100%;
-        width: 100px;
+        width: ${props => props.active ? '200px':'300px'} ;
         position: fixed;
         z-index: 1;
         margin-left:100px;

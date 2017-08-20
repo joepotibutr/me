@@ -1,19 +1,25 @@
 import React, { Component } from 'react';
 import { SidenavToggle , SidenavBar } from './sidenav.style';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+
 
 export default class SideNav extends Component {
-
+    constructor(props){
+        super(props);
+        this.state = {
+            active : false
+        }
+    }
+   
 
     render() {
     
         return (
             <div>
-                <ReactCSSTransitionGroup>
-                <SidenavToggle >☰</SidenavToggle>
+              
+                <SidenavToggle  onClick={() => this.setState({ active:!this.state.active }) }>☰</SidenavToggle>
                   
-    
-                  </ReactCSSTransitionGroup>
+                <SidenavBar active={this.state.active}/>
+                 
             </div>
         );
     }
