@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { SidenavToggle , SidenavBar } from './sidenav.style';
+import { SidenavToggle , Sidebar , SidebarItem } from './sidenav.style';
+import { Flex } from '../../theme/grid';
 
 
 export default class SideNav extends Component {
@@ -17,9 +18,13 @@ export default class SideNav extends Component {
             <div>
               
                 <SidenavToggle  onClick={() => this.setState({ active:!this.state.active }) }>☰</SidenavToggle>
-                  
-                <SidenavBar active={this.state.active}/>
-                 
+                <Flex justify={'center'} align={'center'}>
+                    <Sidebar active={this.state.active}>
+                        <SidebarItem href="www.google.com" >About</SidebarItem>
+                        <SidebarItem href="www.google.com" >Projects</SidebarItem>
+                        <SidebarItem href="www.google.com" >Contact</SidebarItem>
+                    </Sidebar>
+                 </Flex>
             </div>
         );
     }

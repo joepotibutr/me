@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const SidenavToggle = styled.span`
     cursor:pointer;
+    z-index:2;
     position:absolute;
     color:white;
     top:50px;
@@ -14,18 +15,28 @@ export const SidenavToggle = styled.span`
         }
 `
 
-export const SidenavBar = styled.div`
-        height: 100%;
-        width: ${props => props.active ? '200px':'300px'} ;
+export const Sidebar = styled.div`
+        height: ${props => props.active ? '50%':'0'} ;
+        width: 100%;
         position: fixed;
         z-index: 1;
-        margin-left:100px;
         top: 0;
         left: 0;
-        background-color: red;
+        background-color: #111;
         overflow-x: hidden;
         transition: 0.5s;
-        padding-top: 60px;
-        text-align:center;
-       
+        text-align:center;   
 `
+
+export const SidebarItem = styled.a`
+        padding:25px;
+        font-size: 25px;
+        color: #818181;
+        transition: 0.3s;
+        text-decoration:none;
+            &:hover{
+                color: #f1f1f1;
+            }
+
+`
+

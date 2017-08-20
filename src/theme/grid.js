@@ -2,20 +2,18 @@ import styled,{ css } from 'styled-components';
 
 
 export const Flex = styled.div`
-display:flex;
+        display:flex;
 
-${({ justify }) => justify && css `
-    justify-content  : ${justify} ;
+        ${({ justify }) => justify && css `
+            justify-content  : ${justify} ;
 
-`} 
+        `} 
 
-${({ align }) => align && css `
+        ${({ align }) => align && css `
 
-    align-items : ${align} ;
+            align-items : ${align} ;
 
-`}
-
-
+        `}
 `
 export const Container = styled.div`
 padding-left: 120px;
