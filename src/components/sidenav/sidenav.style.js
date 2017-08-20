@@ -47,6 +47,7 @@ export const Darker = styled.div`
     z-index:2;
     position:absolute;
     transition:1s;
+    overflow:hidden;
 `
 
 export const Underline = styled.div`
@@ -54,6 +55,6 @@ export const Underline = styled.div`
     height:2px; 
     background: #F2F3F4;
     transition: .3s;
-
+    
 `
 
