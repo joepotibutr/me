@@ -35,6 +35,7 @@ export const SidebarItem = styled.a`
     color: white;
     transition: 0.3s ease-out;
     transition-duration: .5s;
+    letter-spacing:1px;
     text-decoration:none;
         &:hover {
           

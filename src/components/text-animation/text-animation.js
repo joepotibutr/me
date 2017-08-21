@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Content , List , Item, Text , Left , Right} from './text-animation.style'
+import {Content , List , Item, Text} from './text-animation.style'
 import {Flex} from '../../theme/grid';
 
 export default class TextAnimation extends Component {
@@ -17,13 +17,12 @@ export default class TextAnimation extends Component {
                 
                         <Flex justify={'center'} align={'flex-end'}>
                             <Content>
-                            <Left>{this.state.left}</Left>
                                     <Text> Hello</Text>
                                     <List>
-                                    <Item>World !</Item>
+                                        <Item>World !</Item>
                                         <Item>Everybody !</Item>
                                     </List>
-                                    <Right>{this.state.right}</Right>
+
                             </Content>
                         </Flex>
            

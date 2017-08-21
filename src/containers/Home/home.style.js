@@ -36,7 +36,7 @@ export const MyName = styled.h1`
     color:#E5E7E9;
     letter-spacing:3px;
     cursor:default;
-    font-size:7em;
+    font-size:5em;
     transform:rotate(-5deg);
     transition: transform .5s ease-in;
         &:hover{
