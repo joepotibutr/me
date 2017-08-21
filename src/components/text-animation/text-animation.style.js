@@ -1,9 +1,9 @@
 import styled , {keyframes} from 'styled-components'
-import {Flex} from '../../theme/grid';
+
 
 const change = keyframes`
         30%,70% {
-            transform:translate(0,-50%);
+            transform:translateY(-50%);
         }
 `
 
@@ -14,6 +14,20 @@ export const Content = styled.div`
     padding-left:40px;
     font-size:4em;
 `
+const Bracket = styled.span`
+    color:#5DADE2;
+    position:absolute;
+    font-size:1.5em;
+
+`
+export const Left = styled(Bracket)`
+   left:29%;
+   top:23%;     
+`
+export const Right = styled(Bracket)`
+    right:27%;
+    top:23%;     
+`
 
 export const List = styled.ul`
     margin-top:0;
@@ -21,7 +35,7 @@ export const List = styled.ul`
     list-style:none;
     padding-left:180px;
     animation-name:${change};
-    animation-duration:2s;
+    animation-duration:5s;
     animation-iteration-count: infinite;
 `
 export const Item = styled.li`

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { SidenavToggle , Sidebar , SidebarItem , Darker , Underline } from './sidenav.style';
+import { SidenavToggle , Sidebar , SidebarItem , Darker  } from './sidenav.style';
 import TextAnimation from '../text-animation/text-animation'
 import {Flex} from '../../theme/grid';
 
@@ -25,9 +25,9 @@ export default class SideNav extends Component {
                 <Sidebar active={this.state.active} >
                 < TextAnimation/>
                 <Flex justify={'center'} align={'center'}>
-                        <SidebarItem href="www.google.com" >ABOUT<Underline/></SidebarItem>
-                        <SidebarItem href="www.google.com" >PROJECTS<Underline/></SidebarItem>
-                        <SidebarItem href="www.google.com" >CONTACT<Underline/></SidebarItem>
+                        <SidebarItem href="#" >ABOUT</SidebarItem>
+                        <SidebarItem href="#" >PROJECTS</SidebarItem>
+                        <SidebarItem href="#" >CONTACT</SidebarItem>
                         </Flex>
                
                 </Sidebar>
