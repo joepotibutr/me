@@ -1,23 +1,5 @@
 import styled from 'styled-components';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
-
-
-export const TextTransitionGroup = styled(ReactCSSTransitionGroup).attrs({
-    transitionName:'text',
-    transitionAppear:true,
-    transitionAppearTimeout:500,
-  
-})`
-    .text-appear{
-        opacity:0.1;
-    }
-    .text-appear-active{
-        opacity:1;
-        transition:opacity .5s;
-    }
-
-`
 export const SocialMedia = styled.div`
     display:flex;
     justify-content:center;
@@ -54,7 +36,7 @@ export const MyName = styled.h1`
     color:#E5E7E9;
     letter-spacing:3px;
     cursor:default;
-    font-size:5em;
+    font-size:7em;
     transform:rotate(-5deg);
     transition: transform .5s ease-in;
         &:hover{

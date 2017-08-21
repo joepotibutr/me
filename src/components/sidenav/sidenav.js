@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { SidenavToggle , Sidebar , SidebarItem , Darker , Underline } from './sidenav.style';
-//import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import TextAnimation from '../text-animation/text-animation'
+import {Flex} from '../../theme/grid';
 
 
 export default class SideNav extends Component {
@@ -20,12 +21,14 @@ export default class SideNav extends Component {
                     {this.state.active ? 'X':'☰'}
                   
                 </SidenavToggle>
-               
-                <Sidebar active={this.state.active} justify={'center'} align={'center'}>
-                
+              
+                <Sidebar active={this.state.active} >
+                < TextAnimation/>
+                <Flex justify={'center'} align={'center'}>
                         <SidebarItem href="www.google.com" >ABOUT<Underline/></SidebarItem>
                         <SidebarItem href="www.google.com" >PROJECTS<Underline/></SidebarItem>
                         <SidebarItem href="www.google.com" >CONTACT<Underline/></SidebarItem>
+                        </Flex>
                
                 </Sidebar>
                

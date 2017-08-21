@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {Flex} from '../../theme/grid';
+
 
 export const SidenavToggle = styled.span`
     cursor:pointer;
@@ -12,7 +12,7 @@ export const SidenavToggle = styled.span`
     transform:scale(1.5,1);
 `
 
-export const Sidebar = styled(Flex)`
+export const Sidebar = styled.div`
     height: ${props => props.active ? '50%':'0'} ;
     width: 100%;
     position: fixed;
@@ -21,26 +21,32 @@ export const Sidebar = styled(Flex)`
     left: 0;
     background-color: #111;
     overflow: hidden;
-    transition: 0.5s ease-out;
-    text-align:center;   
+    transition: 0.7s ease-in-out;
+    text-align:center; 
+    display:grid;
+    grid-template-rows:50%;
+
 `
 
 export const SidebarItem = styled.a`
     font-family: 'Gurajada', serif;
-    padding:75px;
-    font-size: 2.5em;
+    padding:0 60px 0 60px;
+    font-size: 1.5em;
     color: white;
-    transition: 0.3s;
+    transition: 0.3s ease-out;
+    transition-duration: .5s;
     text-decoration:none;
         &:hover {
-            color: #f1f1f1;
+          
+           color:#E9967A;
+            
         }
        
 
 `
 export const Darker = styled.div`
     width:100%;
-    height:100vh;
+    height:100%;
     background-color:black;
     opacity: ${props => props.active ? '0.5':'0'};
     visibility: ${props => props.active ? 'visible':'hidden'};
@@ -54,7 +60,6 @@ export const Underline = styled.div`
     width:100%; 
     height:2px; 
     background: #F2F3F4;
-    transition: .3s;
-    
+ 
 `
 
