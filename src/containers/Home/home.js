@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { MyName , Paragraph , Icon ,  SocialMedia } from './home.style';
+import { MyName , Paragraph , Icon ,  SocialMedia , TextTransitionGroup } from './home.style';
 import { Container , Flex } from '../../theme/grid';
 
 
@@ -9,14 +9,14 @@ export default class Home extends Component {
         return (
             <Container>
                 <Flex justify={'center'} align={'center'}>
-                  <div>
+                  <TextTransitionGroup>
                         <MyName>Watcharapong</MyName>
                             <Paragraph>
                             A CREATIVE FRONT-END DEVELOPER
                             <br/>
                             WHO LOVES TECHNOLOGY AND DESIGN
                             </Paragraph>
-                    </div>
+                    </TextTransitionGroup>
                </Flex>
                
                <SocialMedia>

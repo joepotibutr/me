@@ -1,23 +1,23 @@
 import styled from 'styled-components';
-//import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 
-/*
+
 export const TextTransitionGroup = styled(ReactCSSTransitionGroup).attrs({
     transitionName:'text',
     transitionAppear:true,
-    transitionAppearTimeout:1000,
+    transitionAppearTimeout:500,
   
 })`
     .text-appear{
         opacity:0.1;
     }
-    .text-appear.text-appear-active{
+    .text-appear-active{
         opacity:1;
-        transition:opacity 1s linear;
+        transition:opacity .5s;
     }
 
-`*/
+`
 export const SocialMedia = styled.div`
     display:flex;
     justify-content:center;
