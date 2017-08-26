@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { SidenavToggle , Sidebar , SidebarItem , Darker  } from './sidenav.style';
 import TextAnimation from '../text-animation/text-animation'
 import {Flex} from '../../theme/grid';
+import {Link} from 'react-router-dom'
 
 
 export default class SideNav extends Component {
@@ -26,7 +27,7 @@ export default class SideNav extends Component {
                 <Sidebar active={this.state.active} >
                 < TextAnimation/>
                 <Flex justify={'center'} align={'center'}>
-                        <SidebarItem>ABOUT</SidebarItem>
+                        <SidebarItem><Link to="/about">ABOUT</Link></SidebarItem>
                         <SidebarItem>PROJECTS</SidebarItem>
                         <SidebarItem>CONTACT</SidebarItem>
                 </Flex>
