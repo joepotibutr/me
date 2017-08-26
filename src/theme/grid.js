@@ -20,6 +20,6 @@ export const Container = styled.div`
         padding-right: 120px;
         height:100%;
         display:grid;
-        grid-template-rows:80% 20%;
+        grid-template-rows:90% 10%;
 `
 

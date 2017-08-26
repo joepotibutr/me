@@ -6,7 +6,7 @@ export default class SocialMedia extends Component {
     render() {
         return (
            
-                <Flex justify={'center'} align={'center'}>
+                <Flex justify={'center'} align={'flex-start'}>
                   <A href="https://github.com/vchrpng"> <Icon src={require('../../assets/github.png')} alt="github"/></A>
                   <A href="https://instagram.com/josphr"> <Icon src={require('../../assets/instagram.png')} alt="instagram"/></A>
                   <A href="https://line.me/vchrpng"> <Icon src={require('../../assets/line.png')} alt="line"/></A>
