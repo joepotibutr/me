@@ -28,8 +28,8 @@ export default class SideNav extends Component {
                 < TextAnimation/>
                 <Flex justify={'center'} align={'center'}>
                         <SidebarItem><Link to="/about">ABOUT</Link></SidebarItem>
-                        <SidebarItem>PROJECTS</SidebarItem>
-                        <SidebarItem>CONTACT</SidebarItem>
+                        <SidebarItem><Link to="/projects">PROJECTS</Link></SidebarItem>
+                        <SidebarItem><Link to="/about">CONTACT</Link></SidebarItem>
                 </Flex>
                
                 </Sidebar>
