@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import { MyName , Paragraph , Icon ,  SocialMedia } from './home.style';
+import { MyName , Paragraph  } from './home.style';
 import { Container , Flex } from '../../theme/grid';
+import SocialMedia from '../../components/socialmedia/socialmedia'
 
 
 
 export default class Home extends Component {
     render() {
         return (
+            
             <Container>
                 <Flex justify={'center'} align={'center'}>
                   <div>
@@ -19,15 +21,10 @@ export default class Home extends Component {
                     </div>
                </Flex>
                
-               <SocialMedia>
-                    <Icon src={require('../../assets/github.png')} alt="github"/>
-                    <Icon src={require('../../assets/instagram.png')} alt="instagram"/>
-                    <Icon src={require('../../assets/line.png')} alt="line"/>
-                    <Icon src={require('../../assets/linked-in.png')} alt="linked-in"/>
-                    <Icon src={require('../../assets/spotify.png')} alt="spotify"/>
-                 </SocialMedia> 
-                
+               
+                <SocialMedia/>
             </Container>
+           
         );
     }
 }

@@ -16,6 +16,7 @@ export default class SideNav extends Component {
         return (
             <div>
                 <Darker  onClick={() => this.setState({ active:!this.state.active })}  active={this.state.active} />
+                    
                 <SidenavToggle  onClick={() => this.setState({ active:!this.state.active }) }>
                     
                     {this.state.active ? 'X':'☰'}
@@ -25,13 +26,12 @@ export default class SideNav extends Component {
                 <Sidebar active={this.state.active} >
                 < TextAnimation/>
                 <Flex justify={'center'} align={'center'}>
-                        <SidebarItem href="#" >ABOUT</SidebarItem>
-                        <SidebarItem href="#" >PROJECTS</SidebarItem>
-                        <SidebarItem href="#" >CONTACT</SidebarItem>
-                        </Flex>
+                        <SidebarItem>ABOUT</SidebarItem>
+                        <SidebarItem>PROJECTS</SidebarItem>
+                        <SidebarItem>CONTACT</SidebarItem>
+                </Flex>
                
                 </Sidebar>
-               
             </div>
         );
     }

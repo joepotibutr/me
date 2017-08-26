@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Home from './containers/Home/home'
 import Sidenav from './components/sidenav/sidenav'
 import {Background } from './App.style'
+import {BrowserRouter as Router , Route , Link} from 'react-router-dom'
 
 
 
