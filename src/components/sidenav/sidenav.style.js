@@ -5,7 +5,7 @@ export const SidenavToggle = styled.span`
     cursor:pointer;
     z-index:4;
     position:absolute;
-    color:white;
+    color:#1B2631;
     top:50px;
     left:50px;
     font-size:2em;
@@ -19,7 +19,7 @@ export const Sidebar = styled.div`
     z-index: 3;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: white;
     overflow: hidden;
     transition: 0.7s ease-in-out;
     text-align:center; 
@@ -32,14 +32,14 @@ export const SidebarItem = styled.a`
     font-family: 'Gurajada', serif;
     padding:0 60px 0 60px;
     font-size: 1.5em;
-    color: white;
+    color:  #E9967A;
     transition: 0.3s ease-out;
     transition-duration: .5s;
     letter-spacing:1px;
     text-decoration:none;
         &:hover {
           
-           color:#E9967A;
+           color:#1B2631;
             
         }
        

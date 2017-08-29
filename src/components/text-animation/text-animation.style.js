@@ -33,12 +33,12 @@ export const List = styled.ul`
     animation-iteration-count: infinite;
 `
 export const Item = styled.li`
-    color:white;
+    color:#1B2631;
     margin:0;
 `
 
 export const Text = styled.p`
-    color:white;
+    color:#1B2631;
     display:inline;
     float:left;
     margin:0;
